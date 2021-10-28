@@ -19,7 +19,7 @@ Duvidas, favor consultar a documentação disponivel em: https://newsapi.org/doc
 
 > Projeto rodando no Netlify
 
-# Confira através do link:  https://app.netlify.com/sites/sad-pike-77eeca/overview 
+# Confira através do link:  https://sad-pike-77eeca.netlify.app/
 # Passo à passo:
 
 1 - Acesse o link
