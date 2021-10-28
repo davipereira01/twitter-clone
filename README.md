@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# twitter-clone
+Clone do Twitter, desafio proposto pelo processo seletivo de estágio da empresa SuperSim
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Caracteristicas
 
-## Available Scripts
+> Aplicação em React
 
-In the project directory, you can run:
+Nota: Meu primeiro Projeto em React, e a pesar do curto espaço de tempo foi bem proveitoso e gratificante entender seu funcionamento.
 
-### `npm start`
+> Possui duas páginas conforme proposto, sendo elas a página inicial de login, e a página Home.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Lista Populada Dinamicamente
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O campo "O que está acontecendo" à direita da home possuí dados dinamicos consumidos a partir da API pública News API https://newsapi.org/. 
+Sua versão gratuita possui limite de requisições diarias, portanto, pode não funcionar em algum momento, mas está funcional enquanto disponivel e simula os assuntos do momento.
+Caso a tabela não esteja funcionando, aqui vai uma chave da API que pode ser alterada no arquivo NewsList.js : https://newsapi.org/v2/top-headlines?country=br&apiKey=5ae58f63e80c4d0ab0cd1a30fc50545b
 
-### `npm test`
+Duvidas, favor consultar a documentação disponivel em: https://newsapi.org/docs/endpoints/top-headlines
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Projeto rodando no Netlify
 
-### `npm run build`
+# Confira através do link:  https://app.netlify.com/sites/sad-pike-77eeca/overview 
+# Passo à passo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1 - Acesse o link
+2 - Clique no botão "Entrar"
+3 - Clique no botão "Avançar"
+4 - Você será direcionado à home.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Estratégia e ideias
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+A minha estratégia inicial foi construir o front end da aplicação, seu estilo em CSS, e posteriormente incluir o consumo de API, Formulário de Login e demais funcionalidades.
+Previ que conseguiria completar o desafio e com o tempo restante acrescentaria alguma feature Extra.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Features Extras 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Implementação de Tweets com Json:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Houve a ideia de implementar Tweets com Json, mas o tempo já estava se esgotando, por isso só é possivel fazer a leitura dos dados.
+Tive problemas em implementar a modal da página de login, mas estes foram resolvidos. 
+As rotas de acesso a partir da página de login para a home não funcionaram, e por esse motivo, o redirecionamento foi feito atraves de link.
+Também não tive tempo de implementar testes automatizados.
+Precisaria de mais um dia para implementação dos testes.
 
-## Learn More
+> Correções Futuras 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Rotas não estão funcionando. 
+Acredito que com mais 1 dia conseguiria entender melhor seu funcionamento e implementar o acesso a página home a partir da página de login.
+Como alternativa, o botão na tela de login direciona diretamente a página home ao clicar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Responsividade 
 
-### Code Splitting
+Podem existir problemas com a responsividade em telas menores que a do computador de desenvolvimento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Sinto a necessidade de refatorar o código, rever algumas classes e ids para manter o código limpo e oganizado.
+O tempo foi o maior adversario nesse desafio, e acredito que com mais um dia livre conseguiria deixar o código mais limpo e agradavel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# O que aprendi?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> Aprendi que a gestão de tempo é parte crucial do trabalho.
+> Apis são muito legais de se trabalhar.
+> React parece dificil no começo, porém é muito satisfatório seu aprendizado.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
