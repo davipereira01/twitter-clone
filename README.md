@@ -23,7 +23,7 @@ Confira através do link: https://dreamy-tesla-8589fd.netlify.app/
 
 # Estratégia e ideias
 
-A minha estratégia incial foi construir o front end da aplicação, seu estilo em CSS, e posteriormente incluir o consumo de API, Formulário de Login e demais funcionalidades.
+A minha estratégia inicial foi construir o front end da aplicação, seu estilo em CSS, e posteriormente incluir o consumo de API, Formulário de Login e demais funcionalidades.
 Previ que conseguiria completar o desafio e com o tempo restante acrescentaria alguma feature Extra.
 
 > Features Extras 
@@ -31,11 +31,15 @@ Previ que conseguiria completar o desafio e com o tempo restante acrescentaria a
 Implementação de Tweets com Json:
 
 Houve a ideia de implementar Tweets com Json, mas o tempo já estava se esgotando.
-Tive problemas em implementar a modal da página de login, e por esse motivo não foi possivel deixar a implementação de Tweets 100% funcional.
+Tive problemas em implementar a modal da página de login, e as rotas de acesso a partir da página de login para a home e por esse motivo não foi possivel deixar a implementação de Tweets 100% funcional.
 Também não tive tempo de implementar testes automatizados.
 Precisaria de mais um dia para implementação dos testes.
 
 > Correções Futuras 
+
+Rotas não estão funcionando. 
+Acredito que com mais 1 dia conseguiria entender melhor seu funcionamento e implementar o acesso a página home a partir da página de login.
+
 
 Sinto a necessidade de refatorar o código, rever algumas classes e ids para manter o código limpo e oganizado.
 O tempo foi o maior adversario nesse desafio, e acredito que com mais um dia livre conseguiria deixar o código mais limpo e agradavel.
@@ -45,7 +49,8 @@ O tempo foi o maior adversario nesse desafio, e acredito que com mais um dia liv
 
 > Aprendi que a gestão de tempo é parte crucial do trabalho.
 > Apis São muito legais de se trabalhar.
-> React parece dificil no começo, porém muito satisfatório.
-> Rotas e modais.
+> React parece dificil no começo, porém é muito satisfatório seu aprendizado.
+
+
 
 
