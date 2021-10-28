@@ -1,7 +1,7 @@
 # twitter-clone
 Clone do Twitter, desafio proposto pelo processo seletivo de estágio da empresa SuperSim
 
-#Caracteristicas
+# Caracteristicas
 
 > Aplicação em React
 
@@ -13,10 +13,13 @@ Nota: Meu primeiro Projeto em React, e a pesar do curto espaço de tempo foi bem
 
 O campo "O que está acontecendo" à direita da home possuí dados dinamicos consumidos a partir da API pública News API https://newsapi.org/. 
 Sua versão gratuita possui limite de requisições diarias, portanto, pode não funcionar em algum momento, mas está funcional enquanto disponivel e simula os assuntos do momento.
+Caso a tabela não esteja funcionando aqui vai uma chave da API que pode ser alterada no arquivo NewsList.js : https://newsapi.org/v2/top-headlines?country=br&apiKey=5ae58f63e80c4d0ab0cd1a30fc50545b
+
+Duvidas, favor consultar a documentação disponivel em: https://newsapi.org/docs/endpoints/top-headlines
 
 > Projeto rodando no Netlify
 
-Confira através do link:
+Confira através do link: https://dreamy-tesla-8589fd.netlify.app/
 
 # Estratégia e ideias
 
