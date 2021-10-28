@@ -1,38 +1,499 @@
+@font-face {
+    font-family: 'chirp' ;
+    src: url(Ch1rp/Web/Chirp\ Web\ Heavy.ttf);
+  }
+
+
+body {
+
+    font-family: 'chirp';
+}
+
+
 .App {
-  text-align: center;
+    display: grid;
+    grid-template-columns: 23.5% 44.5% 32%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h2 {
+    font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App span.twitter-logo {
+    border-bottom: 1px gray;
+    height: 3rem;
+    width: 1rem;
+    margin-left: 3.6rem;
+    margin-top: 0rem;
+    font-size: 28px;
+    color: #1d9bf0;
+    margin-top: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.App .feedUpdate{
+    padding: 0.5rem 0;
+    border: 1px #ededed solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.App .feedUpdate:hover{
+    background-color: #f7f9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .menuNavigation {
+    height: 40rem;
+    background-color: white;
+    border-right: solid 1px #eff3f4;
+}
+
+.App nav {
+    background-color: white;
+   
+    margin-left: 12px;
+    margin-top: 11px;
+   
+    width: 17rem;
+    position: fixed;
+}
+
+.App .menuNavigation ul li {
+    margin: 1px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    list-style-type: none;
+    color: #0f1419;
+    border-radius: 30px;
+}
+
+.App .menuNavigation ul li:hover{
+background-color:#eff3f4;
+
+}
+
+.App .menuNavigation ul li a {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    list-style-type: none;
+    color: #0f1419;
+}
+
+.App li {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.App #btnMenu {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 31px;
+    height: 50px;
+    width: 14rem;
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ff4500;
+    transition: all 1.3s;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 37px;
+    margin-top: 0px;
+}
+
+.App button {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 31px;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: #1d9bf07d;
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ff4500;
+    transition: all 1.3s;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 37px;
+    margin-top: 6px;
+}
+
+.App .dashContent {
+    background-color: white;
+}
+
+.App .trendUpdates {
+    background-color: white;
+    border-left: solid 1px #eff3f4;
+}
+
+.App header h1 {
+    background-color: white;
+    font-size: 20px;
+}
+
+.App .updatesContainer {
+    background-color: #f7f9f9;
+    border-radius: 20px;
+    height: 46rem;
+    margin-left: 7%;
+    margin-right: 4%;
+    margin-top: 40px;
+    padding-left: 16px;
+    width: 21rem;
+    overflow: hidden;
+}
+
+
+
+.App .showMoreBox {
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.App a {
+    cursor: pointer;
+}
+
+.App form {
+    height: 1rem;
+   
+}
+
+.App textarea {
+
+    border-radius: 30px;
+    margin-left: 7%;
+    margin-right: 4%;
+    margin-top: 6px;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-color: #f7f9f9;
+    outline: 0;
+    resize: none;
+    font-family: 'chirp';
+
+}
+
+
+
+.App .searchBox {
+    position: relative;
+
+}
+
+.App #searchInput {
+    border-radius: 30px;
+        margin-left: 7%;
+        margin-right: 4%;
+        margin-top: 6px;
+        height: 3rem;
+        width: 19rem;
+        border: none;
+        background-color: #f7f9f9;
+        outline: 0;
+        padding-left: 3rem;
+}
+
+.App #loupeIcon {
+    top: 1.3rem;
+    right: 23rem;
+    position: absolute;
+    height: 1.2rem;
+    width: 1.2rem;
+   
+}
+
+.App .title {
+    height: 3.5rem;
+    position: fixed;
+    border-bottom: 1px solid #eff3f4;
+    background-color: white;
+    width: 36.5rem;
+    padding-left: 15px;
+    padding-top: 0px;
+}
+
+.App #teste {
+    margin-top: -3rem;
+    border-radius: 0px;
+    height: 3rem;
+    width: 17rem;
+    margin-left: 6rem;
+    background-color: white;
+    font-size: 20px;
+}
+
+.App img {
+    width: 29px;
+}
+
+.App .profilePhoto {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+   
+    margin-top: 4rem;
+    margin-left: 1rem;
+    overflow: hidden;
+    background-color:gray;
+}
+
+.App #avatar {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.App #avatarDash {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.App .newTweet {
+    display: flex;
+    height: 13.8rem;
+
+   
+}
+
+.App .commentContent{
+    margin: 0.5rem 0;
+}
+
+.App .actionsTweet {
+   
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    width: 30rem;
+}
+
+.App .actionIcons {
+   
+    height: 2rem;
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    margin-left: 0rem;
+   
+}
+
+.App .actionIcons img {
+
+    height: 1rem;
+    width: 1rem;
+}
+
+.App #gifImage {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-top: -5px;
+}
+
+
+
+
+
+.App .sugestionsToFollow {
+    height: 30rem;
+    width: 21rem;
+    background-color: #f7f9f9;
+    border-radius: 20px;
+    margin-left: 33px;
+    padding-left: 16px;
+    padding-top: 7px;
+    margin-top: 1rem;
+}
+
+.App .sugestionBox {
+    display: flex;
+   
+    height: 8rem;
+    width: 21rem;
+    justify-content: space-between;
+
+}
+
+.App .sugestionBox button {
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    width: 6.4rem;
+    height: 2.3rem;
+    background-color: black;
+}
+
+.App .sugestionBox .profilePhoto {
+
+    margin-top: 1rem;
+    background-color:gray;
+
+}
+
+.App .avatarUser {
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.App .messageBox {
+    box-shadow: rgb(101 119 134 / 20%) 0px 0px 15px, rgb(101 119 134 / 15%) 0px 0px 3px 1px;
+    border-radius: 20px 20px 0px 0px;
+    height: 3.5rem;
+    width: 24rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    padding-left: 16px;
+    padding-top: 1px;
+    margin-top: 16px;
+    background-color: white;
+}
+   
+
+
+
+
+.App #photoNav {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 1px;
+}
+
+.App .userDados {
+    height: 4.5rem;
+    width: 15rem;
+   
+    border-radius: 20px;
+    margin-left: 3rem;
+    color: black;
+    margin-top: 40px;
+    font-size: 12px;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+}
+
+.App #userNav {
+    height: 5rem;
+    width: 10rem;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.App .userComment {
+    margin-right: 2rem;
+}
+
+.App p {
+    color: black;
+}
+
+.App .actionImg {
+    height: 17px;
+    width: 17px;
+}
+
+.App .box-content {
+    width: 37.5rem;
+    height: 3.5rem;
+   
+    border-bottom: solid 1px #f7f9f9;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.App .messageContainer {
+    position: fixed;
+    bottom: 0;
+   
+}
+
+.App .policies {
+    font-size: 14px;
+    height: 10rem;
+    /* background-color: yellow; */
+    width: 17rem;
+    margin-left: 2rem;
+}
+
+.App .tweetFeed {
+
+   
+   
+   
+}
+
+.App .actionsTweetFeed {
+
+    height: 2rem;
+    width: 37.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.App .actionsTweetFeed img {
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.App .feedItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5rem;
+}
+
+.App #userInformationFeed {
+   
+    margin-left:1rem;
+}
+
+.App #profilePhotoFeed {
+    margin-Top: 1rem;
+}
+
+
+.App .updateContent {
+   
+   
+    width: 22rem;
+    margin-left: -16px;
+    padding: -22px;
+
+}
+
+.App .newListBox {
+
+   
+
+}
+
+.App .newListBox:hover {
+    background-color:red;
+}
+
+
+.App .userInformation{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }

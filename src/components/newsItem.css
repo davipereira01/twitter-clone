@@ -1,0 +1,28 @@
+.newsItem {
+
+    margin-left: 18px;
+
+
+}
+
+.newsImg {
+
+    width: 4rem;
+    margin-top: 0;
+    margin-left: 16rem;
+    height: 4rem;
+    border-radius: 14px;
+
+}
+
+h3 {
+
+    font-size: 15px;
+    width: 15.5rem;
+    margin-top: -3rem;
+    
+}
+
+p {
+    font-size: 13px;
+}
