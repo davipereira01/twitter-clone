@@ -13,7 +13,7 @@ useEffect ( ( ) => {
 
         
 
-        const res = await Axios.get("https://newsapi.org/v2/everything?q=tesla&from=2021-09-27&sortBy=publishedAt&apiKey=cb976e0ef714444a861ef091c4def86b")
+        const res = await Axios.get("https://newsapi.org/v2/top-headlines?country=br&apiKey=5ae58f63e80c4d0ab0cd1a30fc50545b")
 
         
         setArticles(res.data.articles)
